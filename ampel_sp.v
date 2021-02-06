@@ -77,7 +77,7 @@ module ampel_sp(
                        end
       HS_Gelb_Setup: begin nextstate <= HS_Gelb_NS_Rot; end
       HS_Gelb_NS_Rot: begin
-                          if(ready) nextstate <= NS_Gruen_Setup;
+                          if(ready) nextstate <= HS_Rot_Setup;
                           else nextstate <= HS_Gelb_NS_Rot;
                       end
       HS_Rot_Setup: begin nextstate <= HS_Rot_NS_Rot; end
